@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Awesome Project",
+        "description": "A cool open source tool for developers",
+        "url": "https://example.com",
+        "tags": ["Tool", "OpenSource"]
+    },
+    {
+        "name": "AI Helper",
+        "description": "AI-based assistant for productivity",
+        "url": "https://aihelper.com",
+        "tags": ["AI", "Productivity"]
+    },
+    {
+        "name": "Web Utils",
+        "description": "A collection of handy web utilities",
+        "url": "https://webutils.io",
+        "tags": ["Web", "Utilities"]
+    }
+]

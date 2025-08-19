@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenList Example</title>
+    <title>STPDCK OpenList</title>
+    <meta name="description" content="一个收集优秀项目和工具的开源列表">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold">示例</h1>
-        <input id="search" type="text" placeholder="搜索..." class="border rounded p-2 w-60">
+<body class="transition-colors duration-300">
+
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">STPDCK 项目列表</h1>
+        <div class="flex gap-4">
+            <input id="search" type="text" placeholder="搜索..." class="border rounded p-2 w-60 dark:bg-gray-700 dark:border-gray-600">
+            <button id="theme-toggle" class="px-3 py-2 bg-gray-200 dark:bg-gray-700 rounded">🌙</button>
+        </div>
     </header>
 
+    <!-- Category Filters -->
+    <div id="categories" class="flex flex-wrap gap-2 p-4"></div>
+
+    <!-- List Container -->
     <main class="p-6">
         <div id="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </main>

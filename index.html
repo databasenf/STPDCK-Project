@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STPDCK OpenList</title>
-    <meta name="description" content="一个收集优秀项目和工具的开源列表">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>STPDCK 教程</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Docsify 样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <style>
+    /* 自定义暗黑模式 */
+    body.dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    body.dark-mode a {
+      color: #66d9ef;
+    }
+  </style>
 </head>
-<body class="transition-colors duration-300">
+<body>
+  <div id="app">加载中...</div>
 
-    <!-- Header -->
-    <header class="bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold">STPDCK 项目列表</h1>
-        <div class="flex gap-4">
-            <input id="search" type="text" placeholder="搜索..." class="border rounded p-2 w-60 dark:bg-gray-700 dark:border-gray-600">
-            <button id="theme-toggle" class="px-3 py-2 bg-gray-200 dark:bg-gray-700 rounded">🌙</button>
-        </div>
-    </header>
+  <!-- Docsify 脚本 -->
+  <script>
+    window.$docsify = {
+      name: 'STPDCK 教程',
+      repo: 'https://github.com/databasenf/STPDCK-Project',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      search: 'auto',
+      themeColor: '#42b983'
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
-    <!-- Category Filters -->
-    <div id="categories" class="flex flex-wrap gap-2 p-4"></div>
-
-    <!-- List Container -->
-    <main class="p-6">
-        <div id="list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-    </main>
-
-    <script src="script.js"></script>
+  <!-- 暗黑模式按钮 -->
+  <button id="toggle-dark" style="
+    position:fixed;bottom:20px;right:20px;
+    background:#333;color:#fff;border:none;
+    padding:10px 15px;border-radius:8px;cursor:pointer;">
+    🌙 暗黑模式
+  </button>
+  <script>
+    const btn = document.getElementById('toggle-dark');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      btn.textContent = document.body.classList.contains('dark-mode') ? '☀️ 亮色模式' : '🌙 暗黑模式';
+    });
+  </script>
 </body>
 </html>

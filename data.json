@@ -1,20 +1,23 @@
 [
     {
         "name": "Awesome Project",
-        "description": "A cool open source tool for developers",
+        "description": "一个开源开发者工具",
         "url": "https://example.com",
-        "tags": ["Tool", "OpenSource"]
+        "tags": ["Tool", "OpenSource"],
+        "category": "开发工具"
     },
     {
         "name": "AI Helper",
-        "description": "AI-based assistant for productivity",
+        "description": "AI 助手，提高生产力",
         "url": "https://aihelper.com",
-        "tags": ["AI", "Productivity"]
+        "tags": ["AI", "Productivity"],
+        "category": "人工智能"
     },
     {
         "name": "Web Utils",
-        "description": "A collection of handy web utilities",
+        "description": "实用的网页工具集合",
         "url": "https://webutils.io",
-        "tags": ["Web", "Utilities"]
+        "tags": ["Web", "Utilities"],
+        "category": "网页工具"
     }
 ]

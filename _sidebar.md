@@ -1,2 +1,3 @@
-* [首页](README.md)
-* [安装 & 使用](guide.md)
+- [首页](/)
+- [教程](guide.md)
+- [关于](about.md)

@@ -1,10 +1,7 @@
-# 欢迎来到 STPDCK 教程站
+# 欢迎来到 STPDCK 首页
 
-这里是 STPDCK 项目的文档站点，使用 [Docsify](https://docsify.js.org) 构建。
+这里是 STPDCK 项目的站点，使用 [Docsify](https://docsify.js.org) 构建
 
-## 目录
-- [教程](/guide/)
-- [API文档](/api/)
-- [关于我们](/about/)
+本项目由一群初高中生发起，皆在为破解科大讯飞AI学习机提供技术支持
 
----
+我们不为什么，我们只为夺回原本属于自己学习机的完全使用权

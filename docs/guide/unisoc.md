@@ -7,10 +7,9 @@
 * X2/Z1/Q1/老版本课堂版(C6/C8)且不带Pro或S等字样的机型/X2Pro
 
 ## 1.1 下载您需要的文件
-* 驱动：在**本教程仓库-配套文件/展讯**下有"紫光驱动_R4.21.3201.zip"，在计算机上下载下来并解压，进入带Win10字样的目录，如果你是Win7/8，请进入带Win7/Win8字样的目录，然后点击双击打开DriverSetup.exe并无脑下一步完成安装过程
+* 驱动：[点这里下载](https://treexy.com/products/driver-fusion/database/ports-com-lpt-serial/unisoc/sprd-u2s-diag/)在计算机上下载下来并解压，进入带Win10字样的目录，如果你是Win7/8，请进入带Win7/Win8字样的目录，然后点击双击打开DriverSetup.exe并无脑下一步完成安装过程
 * spd_dump（刷机工具）：去[nightly.link](https://nightly.link/TomKing062/spreadtrum_flash/workflows/build/main)下载最新x86的Dev_custdebug版本并**将zip文件解压到桌面或者其他位置的SPRD目录(目录等会要考)**
-* fdl文件：在**本教程仓库-配套文件/展讯/fdls/ud710**中存放了备份，两个文件全部下载下来即可
-* **酷安/Bilibili@某贼**整的半自动化公版Bootloader解锁脚本(windows):在**本教程仓库-配套文件/展讯/**中可以找到我在此基础上做的`BL_Unlock_tool_and_chip2_file.7z`，下载下来解压备用
+* fdl文件：在本网站[配套GitHub主分支](https://github.com/databasenf/STPDCK-Project/tree/main/Unisoc)中存放了备份，两个文件全部下载下来即可
 
 ## 1.2 展讯spd_dump工具的使用
 
@@ -88,7 +87,7 @@
 
 ## 2.2 实操
 ### 2.2.0 解锁BL锁(展讯安卓9通用，V2版本)
-下载并解压`BL_Unlock_tool_and_chip2_file.7z`(在 本教程仓库-配套文件-展讯 文件夹下可找到)
+下载并解压[BL_Unlock_tool_and_chip2_file.7z](https://github.com/databasenf/STPDCK-Project/releases/tag/tools)
 
 执行一下里面的spd_dump和openssl.exe，如果不出现报错弹窗则继续，否则请去微软运行库[发布地址](https://wwa.lanzout.com/b0b8rs19a#9527 "密码9527")下载并安装最新版微软常用运行库
 
@@ -128,7 +127,7 @@ ro.sys.usb.default.config=diag,adb
 ### 2.2.2 Chip2
 这里就比较复杂了，大概有两种情况（已有可用镜像或者还没有）
 
-- 有可用的情况：去问LEAKING群群主或者等级最高的群管理要修补好的boot和system文件（完全免费），并且使用fastboot命令刷入修改后的分区即可
+- 有可用的情况：去问里群群群主或者等级最高的群管理要修补好的boot和system文件（完全免费），并且使用fastboot命令刷入修改后的分区即可
 
 - 无可用的情况（即：如何给新机型适配）：
 1. 刷入chip2-sGSI-v2版本镜像

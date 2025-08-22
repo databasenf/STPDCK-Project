@@ -1,48 +1,39 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>STPDCK Docs</title>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
+  <meta charset="UTF-8">
+  <title>STPDCK 文档</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Docsify 样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <style>
-    /* 首页隐藏 sidebar */
-    body[data-page="/README.md"] .sidebar {
-      display: none !important;
-    }
-    /* 调整正文宽度，当 sidebar 隐藏时居中 */
-    body[data-page="/README.md"] .content {
-      max-width: 900px;
-      margin: 0 auto;
+    /* 自定义样式 */
+    .app-name {
+      font-size: 20px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div id="app">加载中...</div>
-
   <script>
     window.$docsify = {
       name: 'STPDCK',
       repo: '',
-
-      loadNavbar: true, // 启用顶部导航
-      loadSidebar: true, // 启用侧边栏（仅 guide 有效）
-      
-      // 设置别名，避免首页加载 sidebar
+      loadSidebar: true,  // 启用 sidebar
+      subMaxLevel: 2,     // 目录层级
       alias: {
-        '/_sidebar.md': '',          // 首页不加载 sidebar
-        '/guide/_sidebar.md': '/guide/_sidebar.md' // 教程页使用自己的 sidebar
+        '/_sidebar.md': '',                 // 首页无 sidebar
+        '/about/_sidebar.md': '',           // 关于页无 sidebar
+        '/guide/_sidebar.md': '/guide/_sidebar.md', // 教程页使用自己的 sidebar
       },
-
-      subMaxLevel: 2, // 子标题最大层级
-      maxLevel: 4,
-
-      auto2top: true // 切换页面时自动滚动到顶部
+      // 首页路由配置
+      homepage: 'README.md',
+      // 防止缓存问题
+      noCache: true
     };
   </script>
-
-  <!-- Docsify 主脚本 -->
+  <!-- Docsify 脚本 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>

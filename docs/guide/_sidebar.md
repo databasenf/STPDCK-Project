@@ -1,2 +1,4 @@
 - [前言](/guide/README.md)
 - [紫光机型破解](/guide/unisoc.md)
+- [骁龙机型破解](/guide/Qualcomm.md)
+- [瑞芯微机型破解](/guide/Rockchip.md)

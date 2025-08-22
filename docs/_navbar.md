@@ -1,3 +1,3 @@
-* [首页](https://databasenf.github.io/STPDCK-Project/#/)
+* [首页](README.md)
 * [教程](/guide/)
 * [关于](/about/)
